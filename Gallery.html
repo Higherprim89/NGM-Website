@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Discover Unique Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Art Attack by NGM</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item active">
+                    <a href="Gallery.html" class="navbar__links">Gallery</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contactus.html" class="navbar__links">Contact Us</a>
+                </li>
+                <!-- ------Cart & Sign-in Menu------ -->
+                
+                <!-- <div class="cart-icon">
+                    <a href="signinpage.html" class="navbar__links">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>   
+                <div class="cart-icon">
+                    <a href="cart.html" class="navbar__links">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count-badge">0</span>
+                    </a>
+                </div> -->
+
+                <!-- <div class="Instagram">
+                    <a href="https://www.instagram.com/dr_evolve?igsh=MXVtcXpia3kwcHN5eQ==" class="navbar__links">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                  </div>   -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section id="home" class="hero-section">
+        <div class="container">
+            <h2>Welcome to my Gallery</h2>
+            <p>Explore a curated selection of fine art from talented artists around the world.</p>
+        </div>
+    </section> -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h2>My Collection</h2>
+          
+          <!-- Tab Navigation -->
+          <div class="gallery-tabs">
+            <button class="tab-button active" data-tab="cubism">Cubism</button>
+            <button class="tab-button" data-tab="impressionism">Impressionism</button>
+            <button class="tab-button" data-tab="abstract">Abstract</button>
+            <!-- Add more tabs as needed -->
+          </div>
+          
+          <!-- Tab Content Sections -->
+          <div class="tab-content active" id="cubism-tab">
+            <div class="artwork-grid">
+              <!-- Cubism Artworks -->
+              <div class="artwork-card">
+                <a href="fragments.html" class="image-link">
+                    <img src="images/fragments.jpg" alt="fragments">
+                </a>
+                <h3>Fragments</h3>
+                <p>Description of Fragments.</p>
+            </div>
+            <div class="artwork-card">
+              <a href="lakhe.html" class="image-link">
+                  <img src="images/Lakhe.jpg" alt="Lakhe">
+              </a>
+              <h3>Lakhe</h3>
+              <p>Description of Fragments.</p>
+              <!-- <span class="price">$1200</span>
+              <button>Add to Cart</button> -->
+          </div>
+          <div class="artwork-card">
+            <a href="the mother.html" class="image-link">
+                <img src="images/The Mother.jpg" alt="The Mother">
+            </a>
+            <h3>The Mother</h3>
+            <p>Description of Fragments.</p>
+            <!-- <span class="price">$1100</span>
+            <button>Add to Cart</button> -->
+        </div>
+        <div class="artwork-card">
+          <a href="the artist.html" class="image-link">
+              <img src="images/The Artist.jpg" alt="The Artist">
+          </a>
+          <h3>The Artists</h3>
+          <p>She is the embodiment of joy, confidence, and freedom; an artist in harmony with her passion.</p>
+          <!-- <span class="price">$900</span>
+          <button>Add to Cart</button> -->
+      </div>
+              <!-- Repeat other cubism artworks -->
+            </div>
+          </div>
+          
+          <div class="tab-content" id="impressionism-tab">
+            <div class="artwork-grid">
+              <!-- Impressionism Artworks -->
+              <div class="artwork-card">
+                <a href="Tuscany Dream Window.html" class="image-link">
+                    <img src="images/TuscanyDreamWindow.jpg" alt="Tuscany Dream Window">
+                </a>
+                <h3>Tuscany Dream Window</h3>
+                <p>Description of Fragments.</p>
+                <!-- <span class="price">$500</span>
+                <button>Add to Cart</button> -->
+            </div>
+            <div class="artwork-card">
+              <img src="images/But 1st, Coffee.jpg" alt="Fragments">
+              <h3>But first, Coffee</h3>
+              <p>Description of Fragments.</p>
+              <!-- <span class="price">$1200</span>
+              <button>Add to Cart</button> -->
+          </div>
+          <div class="artwork-card">
+            <a href="whisper of red.html" class="image-link">
+                <img src="images/Violin.jpg" alt="Whisper of Red">
+            </a>
+            <h3>Whisper of Red</h3>
+            <p>Description of Fragments.</p>
+            <!-- <span class="price">$600</span>
+            <button>Add to Cart</button> -->
+        </div>
+        <div class="artwork-card">
+          <img src="images/Bus girl.jpg" alt="Fragments">
+          <h3>Bus girl</h3>
+          <p>Description of Fragments.</p>
+          <!-- <span class="price">$1000</span>
+          <button>Add to Cart</button> -->
+      </div>
+              <!-- Repeat other impressionism artworks -->
+            </div>
+          </div>
+          
+          <div class="tab-content" id="abstract-tab">
+            <div class="artwork-grid">
+              <!-- Abstract Artworks -->
+              <div class="artwork-card">
+                <a href="xxxx.html" class="image-link">
+                  <img src="images/xxxx.jpg" alt="Abstract artwork 1">
+                </a>
+                <h3>Emotional Spectrum</h3>
+                <p>Non-representational exploration of color and form.</p>
+              </div>
+              <!-- Repeat other abstract artworks -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>&copy; Art Attack by NGM. All Rights Reserved.</p>
+          </div>
+          
+          <div class="social-media">
+            <span class="follow-text">Follow Us</span>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/dr_evolve?igsh=MXVtcXpia3kwcHN5eQ==" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a> -->
+          </div>
+        </div>
+      </footer>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="tabs.js"></script>
+
+</body>
+</html>
