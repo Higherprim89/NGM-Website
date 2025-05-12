@@ -2,12 +2,12 @@
 
 
 /* Prevent all horizontal overflow at root level */
-html, body {
+/* html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
     position: relative;
-  }
+  } */
   
 
 * {
@@ -27,9 +27,11 @@ html, body {
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 999; 
+   
     }
 
+ 
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -99,11 +101,13 @@ html, body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    text-decoration: none;
 }
 
 .button:hover {
     background: #a28566;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .navbar__links:hover {
@@ -208,20 +212,25 @@ html, body {
 
 }
 
-/* body {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f4; 
     color: #1f204d;
-
-} */
+    overflow-x: hidden; 
+}
 
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 30px;
     text-align: center;
+   
+}
+
+.container h2 {
+    padding: 10px;
 }
 
 header {
@@ -248,13 +257,17 @@ section {
 
 #home {
     background-color: #f8f8f4;
-}
+    margin-top: 0;
+    padding-top: 0;
+  }
+
 
 #artists, #collection, #contact {
     background-color: #f8f8f4;
 }
 
 .artist-grid-home, .artwork-grid-home {
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -294,7 +307,7 @@ section {
   }
   
   /* ===== Large Desktop (1200px+) ===== */
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
     .artwork-grid {
       padding: 30px 150px;
     }
@@ -348,7 +361,8 @@ button:hover {
 
 .gallery-section {
     background-color: #f8f8f4;
-    }
+}
+    
 
 #collection {
     display: grid;
@@ -477,7 +491,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #a28566;;
+    background: #a28566;
 }
 
 .faq-grid {
@@ -530,7 +544,7 @@ button[type="submit"]:hover {
    /* Testimonials Section */
    #testimonials {
     background-color: #f9f9f9;
-    padding: 80px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -757,14 +771,43 @@ button[type="submit"]:hover {
     }
     
     .artwork-description {
-        margin: 50px 50px 50px 50px;
+        margin: 50px ;
         line-height: 1.8;
     }
     
     .artwork-description p {
         margin-bottom: 20px;
         text-align: justify;
-    }
+        /* Mobile-first improvements */
+        hyphens: auto; /* Better word breaks */
+        word-spacing: -0.05em; /* Tighter spacing */
+      }
+
+      @media (max-width: 768px) {
+        .artwork-description {
+          margin: 25px 20px; /* Reduced margins */
+          line-height: 1.6; /* Tighter line spacing */
+        }
+        
+        .artwork-description p {
+          text-align: left; /* Better than justify on mobile */
+          font-size: 1rem; /* Ensure base size */
+          max-width: 100%; /* Prevent overflow */
+          overflow-wrap: break-word; /* Emergency word breaks */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .artwork-description {
+          margin: 20px 15px;
+          line-height: 1.5;
+        }
+        
+        .artwork-description p {
+          font-size: 0.95rem; /* Slightly smaller text */
+          letter-spacing: 0.02em; /* Improved character spacing */
+        }
+      }
     
     /* Two-Column Details */
     .artwork-details {
@@ -947,3 +990,137 @@ button[type="submit"]:hover {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
+ /* Hero Background Styles */
+.hero-background {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between text and button */
+}
+
+.hero-overlay h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin: 0;
+    padding: 0 20px;   
+}
+
+.hero-overlay p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.15rem;
+}
+
+/* Your Original Content Structure */
+.content-wrapper {
+    position: relative;
+   /* margin-top: -100px;  Pulls content up over the background */
+    /* background: rgba(255,255,255,0.95); */
+    padding: 30px;
+    /* border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+    z-index: 2;
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-background {
+        height: 50vh;
+    }
+    
+    .hero-overlay h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+    }
+    
+    .content-wrapper {
+        /* margin-top: -70px; */
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-overlay h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .content-wrapper {
+        margin-top: -50px;
+        padding: 20px;
+    }
+   
+}
+
+.view-artwork-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 2px solid wheat;
+    border-radius: 1ch;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+.view-artwork-btn:hover {
+    background: #a28566;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .view-artwork-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+    
+    .hero-overlay {
+        gap: 1rem;
+    }
+}
+
+.line-break {
+    display: block;
+    height: 1em; /* Adjust this value for spacing */
+    content: " ";
+}
