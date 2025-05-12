@@ -1073,7 +1073,7 @@ button[type="submit"]:hover {
 
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .hero-overlay h1 {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 1rem;
@@ -1084,7 +1084,7 @@ button[type="submit"]:hover {
         padding: 20px;
     }
    
-}
+} */
 
 .view-artwork-btn {
     display: inline-block;
