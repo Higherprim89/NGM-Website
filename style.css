@@ -445,6 +445,12 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .top-row {
     display: flex;
     gap: 40px;
@@ -745,7 +751,7 @@ button[type="submit"]:hover {
 .artist-process {
     max-width: 1200px;
     margin: 50px auto;
-    padding: 0 20px;
+    padding: 2px 20px;
 }
 
 .process-grid {
