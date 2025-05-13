@@ -244,6 +244,10 @@ body {
         justify-content: center;
 }
 
+.container a1 {
+    padding: 40px;
+}
+
 header {
     background-color: #d4a773; /* Dark Wheat */
     color: white;
@@ -787,7 +791,7 @@ button[type="submit"]:hover {
     .artwork-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 90px;
         background: #fff;
         padding: 30px;
         border-radius: 4px;
@@ -825,7 +829,7 @@ button[type="submit"]:hover {
     }
     
     .artwork-description {
-        margin: 50px ;
+        margin: 20px ;
         line-height: 1.8;
     }
     
@@ -868,7 +872,7 @@ button[type="submit"]:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 15px;
-        margin: 30px 0;
+        margin: 20px ;
     }
     
     .detail-item {
@@ -922,6 +926,7 @@ button[type="submit"]:hover {
     font-size: 2.5em;
     margin-bottom: 5px;
     color: #d4a773;
+    text-align: center;
 }
 
 
@@ -1056,6 +1061,7 @@ button[type="submit"]:hover {
     height: 60vh;
     overflow: hidden;
     margin: 0;
+    margin-top: 80px;
     padding: 0;
   }
 
@@ -1222,3 +1228,54 @@ button[type="submit"]:hover {
   background: #fafafa;
     border-radius: 0 4px 4px 0;
 }
+
+/* fullscreen style */
+
+/* Fullscreen overlay styles */
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    text-align: center;
+}
+
+.fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.close-fullscreen {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-fullscreen:hover {
+    color: #ccc;
+}
+
+.enlargeable-image {
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+
+.enlargeable-image:hover {
+    transform: scale(1.02);
+}
+
