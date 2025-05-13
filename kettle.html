@@ -29,7 +29,7 @@
                     <a href="about.html" class="navbar__links">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="contactus.html" class="navbar__links">Contact Us</a>
+                    <a href="#" class="navbar__links">Contact Us</a>
                 </li>
              
                   <!-- ------Cart & Sign-in Menu------ -->
@@ -55,71 +55,57 @@
         </div>
     </nav>
 
-    <div class="contact-container">
-        <!-- Top Row: Contact Form + Contact Info -->
-        <div class="top-row">
-            <!-- <section class="section-box contact-form">
-                <h2>Get in touch</h2>
-                <form action="https://api.web3forms.com/submit" method="POST">
-                   
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <select id="subject" name="subject">
-                            <option value="">Select a subject</option>
-                            <option value="commission">Commission Inquiry</option>
-                            <option value="purchase">Purchase Inquiry</option>
-                            <option value="shipping">Shipping Question</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
-              
-            </section>  -->
+<!-- Art Detail -->
+<main class="container">
+    <a href="Gallery.html" class="back-link">← Back to Gallery</a>
     
-            <section class="section-box contact-info">
-                <h2>Contact Information</h2>
-                <h3>Email</h3>
-                <p><a href="mailto:artattackbyngm@gmail.com">artattackbyngm@gmail.com</a></p>
-                <h3>Studio Hours</h3>
-                <p>Monday - Friday: 10am - 6pm<br>Weekends: By appointment only</p>
-                <h3>Location</h3>
-                <p>Downtown Art District McKinney<br>123 Creative Way<br>McKinney, TX 75004</p>
-            </section>
+    <div class="artwork-container">
+        <div class="artwork-image">
+            <img src="images/kettle.jpg" alt="Artwork Title" class="enlargeable-image">
         </div>
-    
-        <!-- Full Width FAQ Section -->
-        <section class="section-box faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <div class="faq-question">Do you offer commissions?</div>
-                    <p>Yes! I love creating custom pieces. Please reach out with your ideas to discuss possibilities.</p>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Kettle</h3>
+            <!-- <p class="artist-name">Nigam Sedhai</p> -->
+            
+            <div class="artwork-description">
+                <p>First paragraph of artwork description. This should provide an overview of the piece, its significance, and any important contextual information about when and why it was created.</p>
+                
+                <p>Second paragraph with more detailed analysis. Describe the techniques used, materials, and any interesting aspects of the composition or subject matter that viewers should notice.</p>
+                
+                <p>Optional third paragraph with additional historical context or interpretation. You might discuss how this piece fits into the artist's broader body of work or its place in art history.</p>
+            </div>
+            
+            <div class="artwork-details">
+                <div class="detail-item">
+                    <span class="detail-label">Year</span>
+                    <span>YYYY</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">What is your shipping policy?</div>
-                    <p>All artwork is carefully packaged and insured for safe delivery. Shipping is free within the continental US.</p>
+                <div class="detail-item">
+                    <span class="detail-label">Medium</span>
+                    <span>Oil on canvas</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">Can I see artwork in person before purchasing?</div>
-                    <p>Absolutely. Studio visits can be arranged by appointment. Please contact me to schedule a viewing.</p>
+                <div class="detail-item">
+                    <span class="detail-label">Dimensions</span>
+                    <span>H × W cm</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span>Museum or collection name</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Style</span>
+                    <span>Art movement or style</span>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
+</main>
+
+<!-- Fullscreen overlay -->
+<div class="fullscreen-overlay">
+    <span class="close-fullscreen">&times;</span>
+    <img class="fullscreen-image">
+</div>
     
     <!-- Footer -->
     <footer class="site-footer">
@@ -148,9 +134,7 @@
 
     <script src="app.js"></script>
     <script src="script.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="fsimg.js"></script>
 
- 
-   
 </body>
 </html>
