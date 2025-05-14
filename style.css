@@ -29,7 +29,7 @@
     width: 100%;
     top: 0;
     z-index: 999; 
-   
+    transition: top 0.3s ease-in-out; /* Add this for smooth animation */
     }
 
  
@@ -74,6 +74,7 @@
 
 .navbar__item{
     height: 80px;
+    text-align: center;
 }
 
 .navbar__links {
@@ -112,7 +113,7 @@
 }
 
 .navbar__links:hover {
-    color: rgb(212, 139, 139);
+    color: black;
     transition: all 0.3s ease;
 }
 
@@ -138,6 +139,7 @@
     transition: all 0.5s ease;
     height: 50vh;
     z-index: -1;
+    background: #d4a773;
 }
 
 .navbar__menu.active {
@@ -148,7 +150,9 @@
     z-index: 99;
     height: 50vh;
     font-size: 1.2rem;
+    text-align: center;
 }
+
 
 #navbar__logo {
     padding-left: 25px;
@@ -166,14 +170,15 @@
 
 .navbar__item {
     width: 100%;
+    text-align: center; /* Ensure text centers within each item */
 }
 
 .navbar__links{
     text-align: center;
     padding: 2rem;
-    width: 100%;
-    display: table;
-}
+        width: 100%;
+        display: table;
+    }
 
 #mobile-menu {
     position: absolute;
@@ -183,16 +188,21 @@
 }
 
 .navbar__btn{
-    padding-bottom: 2rem;
+   padding-bottom: 2rem;
 }
 
 .button {
-    /* padding-left: 25px; */
+   display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
     height: 50px;
     margin: 0;
+}
+
+.navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
 }
 
 #mobile-menu.is-active .bar:nth-child(2) {
@@ -215,7 +225,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f4; 
-    color: #1f204d;
+    color: #121218;
     overflow-x: hidden; 
 }
 
@@ -895,11 +905,15 @@ button[type="submit"]:hover {
     
     /* Back Link */
     .back-link {
-        display: inline-block;
-        margin-bottom: 30px;
+        display: block; /* Changed from inline-block */
+    text-align: center; /* Centers text horizontally */
+        margin-bottom: 60px;
         color: #666;
         text-decoration: none;
         font-size: 15px;
+        position: relative;
+        top: 40px;
+
     }
     
     .back-link:hover {
@@ -1032,8 +1046,26 @@ button[type="submit"]:hover {
   
   .tab-button.active {
     background: #d4a773;
-    color: white;
+    color: black;
   }
+
+  /* tab button mobile */
+
+  @media screen and (max-width: 768px) {
+    .gallery-tabs {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+        gap: 8px; /* Reduce gap between stacked buttons */
+    }
+    
+    .tab-button {
+        width: 90%; /* Make buttons wider */
+        max-width: 280px; /* But not too wide */
+        text-align: center; /* Center text within buttons */
+        padding: 12px 10px; /* Adjust padding */
+        white-space: normal; /* Allow text to wrap if needed */
+    }
+}
   
   /* Tab Content */
   .tab-content {
@@ -1167,6 +1199,27 @@ button[type="submit"]:hover {
 }
 
 .view-artwork-btn:hover {
+    background: #a28566;
+    color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.view-artwork-btn2 {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #d4a773;
+    color: black;
+    border: 2px solid wheat;
+    border-radius: 1ch;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+.view-artwork-btn2:hover {
     background: #a28566;
     color: #333;
     transform: translateY(-3px);
