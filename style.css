@@ -824,7 +824,7 @@ button[type="submit"]:hover {
         flex-wrap: wrap;
         gap: 90px;
         background: #fff;
-        padding: 30px;
+        padding: 10px;
         border-radius: 4px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
@@ -992,12 +992,12 @@ button[type="submit"]:hover {
         padding-left: 10;
         padding-right: 10; /* Remove container padding to use full width */
     }
-
+/* 
     .artwork-container {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
-    }
+    } */
 
     .artwork-image, 
     .artwork-info {
