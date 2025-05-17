@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Discover Unique Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+             <img src="images/paintbrush logo final.png" alt="Your Logo" class="navbar__logo-img">Art Attack by NGM</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item active">
+                    <a href="Gallery.html" class="navbar__links">Gallery</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__links">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="contactus.html" class="navbar__links">Contact Us</a>
+                </li>
+             
+                  <!-- ------Cart & Sign-in Menu------ -->
+                
+                <!-- <div class="cart-icon">
+                    <a href="signinpage.html" class="navbar__links">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>   
+                <div class="cart-icon">
+                    <a href="cart.html" class="navbar__links">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count-badge">0</span>
+                    </a>
+                </div> -->
+
+                <!-- <div class="Instagram">
+                    <a href="https://www.instagram.com/dr_evolve?igsh=MXVtcXpia3kwcHN5eQ==" class="navbar__links">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                  </div>   -->
+            </ul>
+        </div>
+    </nav>
+
+<!-- Art Detail -->
+<main class="container">
+    <a href="Gallery.html" class="back-link">← Back to Gallery</a>
+    
+    <div class="artwork-container">
+        <div class="artwork-image">
+            <img src="images/kahve.jpg" alt="Artwork Title" class="enlargeable-image">
+        </div>
+        <div class="artwork-info">
+            <h3 class="artwork-title">Kettle</h3>
+            <!-- <p class="artist-name">Nigam Sedhai</p> -->
+            
+            <div class="artwork-description">
+                <p>"Kahve" is a still life of a traditional Turkish coffee pot, small in size, but bold in presence. Made of copper or brass, this pot brews kahve, a thick, strong coffee that’s deeply rooted in Middle Eastern culture.</p>
+                
+                <p>Originating from the Ottoman Empire, kahve is more than a drink. It’s a ritual of connection, conversation, and hospitality. From bustling bazaars in Istanbul to quiet homes in Central Asia, sharing coffee is a daily tradition across much of Asia.</p>
+                
+                <p>This painting honors that warmth, strength, and cultural richness in a single, potent cup.</p>
+            </div>
+            
+            <div class="artwork-details">
+                <div class="detail-item">
+                    <span class="detail-label">Year</span>
+                    <span>2023</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Medium</span>
+                    <span>Acrylic on canvas</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Dimensions</span>
+                    <span>16 × 20 inches</span> 
+                    <span>&</span> <br>
+                    <span>12 x 16 inches</span>
+                </div>
+                <!-- <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span>Museum or collection name</span>
+                </div> -->
+                <div class="detail-item">
+                    <span class="detail-label">Style</span>
+                    <span>Realsim</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Fullscreen overlay -->
+<div class="fullscreen-overlay">
+    <span class="close-fullscreen">&times;</span>
+    <img class="fullscreen-image">
+</div>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>&copy; Art Attack by NGM. All Rights Reserved.</p>
+          </div>
+          
+          <div class="social-media">
+            <span class="follow-text">Follow Us</span>
+            <!-- <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a> -->
+            <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a> -->
+            <a href="https://www.instagram.com/dr_evolve?igsh=MXVtcXpia3kwcHN5eQ==" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a> -->
+          </div>
+        </div>
+      </footer>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="fsimg.js"></script>
+
+</body>
+</html>
